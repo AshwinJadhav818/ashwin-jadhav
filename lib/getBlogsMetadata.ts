@@ -14,6 +14,7 @@ export default function getBlogsMetadata() {
           description: matterResult.data.description,
           publishedDate: matterResult.data.publishedDate,
           isPublished: matterResult.data.isPublished,
+          coverImage: matterResult.data.coverImage,
           tags: matterResult.data.tags,
           slug: fileName.replace('.md', ''),
        };
