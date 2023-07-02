@@ -4,9 +4,9 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'api.time.com',
+                hostname: '/i.imgur.com',
                 port: '',
-                pathname: '/wp-content/**',
+                pathname: '/**',
             },
         ],
     },

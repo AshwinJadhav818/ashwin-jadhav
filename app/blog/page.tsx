@@ -11,7 +11,7 @@ export default function BlogPage() {
             {blogs().map((blog) => (
                <Link href={`/blog/${blog.slug}`} className="mx-auto max-w-md overflow-hidden rounded-lg bg-gray-50 text-black border-gray-100 hover:border-gray-200 hover:bg-gray-200 dark:bg-zinc-900 dark:border-zinc-600 border-bold dark:hover:bg-zinc-800 dark:active:bg-zinc-800 focus:outline-none focus:ring dark:focus:ring-zinc-600 shadow" key={blog.slug}>
                   <Image
-                     src={`/../public/blog${blog.coverImage}`} alt={blog.title} width="500" height="400"
+                     src={blog.coverImage} alt={blog.title} width="500" height="400"
                      className="aspect-video w-full object-cover"
                   />
                   <div className="p-4">

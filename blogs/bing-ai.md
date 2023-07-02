@@ -3,7 +3,7 @@ title: Bing AI
 description: What's all the hype about it. In this article we are going to talk about Bing AI's good and the bad.
 isPublished: true
 publishedDate: 2023/02/24
-coverImage: /bing-ai.jpeg
+coverImage: https://i.imgur.com/QWmyJYQ.jpeg
 tags:
   - bing
   - ai
