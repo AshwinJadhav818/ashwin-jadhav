@@ -2,6 +2,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getBlogsMetadata from "@/lib/getBlogsMetadata";
+import Image from "next/image";
 
 const getBlogContent = (slug: string) => {
    const folder = "blogs/";
@@ -24,6 +25,7 @@ export default function BlogPage(props: any) {
    return (
       <div>
          <div className="text-center">
+            <Image src={blog.data.coverImage} alt={blog.data.title} width="800" height="400" className="rounded-md mb-5 inline" /> 
             <h1 className="font-bold text-2xl tracking-tighter">{blog.data.title}</h1>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">{blog.data.publishedDate}</p>
          </div>
